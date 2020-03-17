@@ -5,18 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./style.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Inter:400,600|Lora:700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
 </head>
 <body>
 	<script src="https://kit.fontawesome.com/b33fd54741.js" crossorigin="anonymous"></script>
-	<section>
+	<section class="list_pop">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#specifications">Specifications</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#faq">FAQ</a></li>
+			<li><a href="#contact">Contact Us</a></li>
+		</ul>
+		<i class="fas fa-times"></i>
+	</section>
+	<section class="first_section">
 		<header>
 			<div class="header_headline">
 				<h1>airmusic</h1>
 			</div>
 			<div class="header_list">
+				<i class="fas fa-bars"></i>
 				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#about">About</a></li>
@@ -44,13 +56,18 @@
 	<main>
 		<section class="specifications_section" id="specifications">
 			<div>
-				<h1>Greatest Specifications</h1>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti ea itaque! Alias neque consequuntur doloribus reprehenderit inventore nemo eum?</p>
+				<div>
+					<h1>Greatest Specifications</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti ea itaque! Alias neque consequuntur doloribus reprehenderit inventore nemo eum?</p>
+				</div>
+				<img src="./images/airpods-wireless-headphonesWHITE.png" alt="" class="white_airpods">
 			</div>
-			<img src="./images/airpods-wireless-headphonesWHITE.png" alt="" class="white_airpods">
 		</section>
 		<section class="features_section" id="features">
 			<div>
+				<div class="sun_img">
+					<img src="./images/Group 62.png" alt="">
+				</div>
 				<h1>Features</h1>
 				<div class="features_table">
 					<div>
@@ -169,7 +186,7 @@
 						</div>
 					</div>
 				</div>
-				<nav class="circle-img"><img src="./images/Combined-Shape.png" alt=""></nav>
+			   	<!-- <div class="circle-img"><img src="./images/Combined-Shape.png" alt=""></div> -->
 			</section>
 			<section class="buy_section">
 				<div class="buy_slider-div">
@@ -259,9 +276,9 @@
 			<nav class="copyright_container">
 				<p>© Copyrights airmusic 2019</p>
 				<div class="footer_icons-container">
-					<div class="footer_icons"><img src="./images/Group 44.png" alt=""></div>
-					<div class="footer_icons"><img src="./images/Path 45.png" alt=""></div>
-					<div class="footer_icons"><img src="./images/Group 51.png" alt=""></div>
+					<div class="footer_icons"><i class="fab fa-twitter"></i></div>
+					<div class="footer_icons"><i class="fab fa-facebook-f"></i></div>
+					<div class="footer_icons"><i class="fab fa-linkedin-in"></i></div>
 				</div>
 			</nav>
 		</div>
@@ -285,6 +302,7 @@
 				cssEase: 'linear',
 				appendDots:$('.color_circles-container')
 			});
+			console.log("mesazhi");
 		});
 	</script>
 </body>

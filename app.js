@@ -23,8 +23,26 @@ div.forEach(function(yy,index){
 	b.addEventListener("click", function(){
 			console.log("mire o o shoqi");
 			expand.classList.toggle("show");
-		    b.classList.toggle("rotate");
+			b.classList.toggle("rotate");
+			b.style.transition = ' all 500ms linear';
 			a.classList.toggle("edge");
 			expand.classList.toggle("edge2");
 	});
 })
+
+const hamburger = document.querySelector('.header_list i')
+const pop = document.querySelector('.list_pop')
+const x = document.querySelector('.list_pop i');
+const a = document.querySelector('.list_pop ul');
+
+hamburger.addEventListener("click", function(){
+	pop.style.width = '100%';
+	pop.style.transition = ' width 1s linear';
+	a.style.display='block';
+});
+
+x.addEventListener("click", function(){
+	pop.style.width = '0';
+	a.style.display='none';
+});
+
