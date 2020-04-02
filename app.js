@@ -16,6 +16,7 @@ const div = document.querySelectorAll('.faq-items>div');
 const lowerpart = document.querySelector('.expand_part');
 const edge = document.querySelector('.faq-items>div>nav');
 
+
 div.forEach(function(yy,index){
 	const a = yy.children[0];
 	const b = a.children[0];
@@ -34,15 +35,18 @@ const hamburger = document.querySelector('.header_list i')
 const pop = document.querySelector('.list_pop')
 const x = document.querySelector('.list_pop i');
 const a = document.querySelector('.list_pop ul');
+const body = document.querySelector('body');
 
 hamburger.addEventListener("click", function(){
 	pop.style.width = '100%';
 	pop.style.transition = ' width 1s linear';
 	a.style.display='block';
+	body.style.overflow='hidden';
 });
 
 x.addEventListener("click", function(){
 	pop.style.width = '0';
 	a.style.display='none';
+	body.style.overflow='unset';
 });
 

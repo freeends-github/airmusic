@@ -1077,6 +1077,16 @@ footer{
 	.header_list ul li {
 		margin-left: 25px;
 	}
+	.leftedge_img,
+	.rightedge_img{
+		display:none;
+	}
+	.copyright_part{
+		width:unset;
+	}
+	footer{
+		justify-content:center;
+	}
 }
 @media only screen and (max-width:800px){
 	.faq-items{
@@ -1203,7 +1213,7 @@ footer{
 		grid-template-columns: 1fr;
 	}
 	.features_table>div{
-		width:300px;
+		max-width:300px;
 		margin:auto;
 	}
 	.case_img {
